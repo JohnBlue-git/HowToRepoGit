@@ -1,0 +1,8 @@
+# Ignore folders
+.repo/
+boost-asio-api/
+nodejs-api/
+
+# Ignore copied README files
+README-boost.md
+README-nodejs.md
