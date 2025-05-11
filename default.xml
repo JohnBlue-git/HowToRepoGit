@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github"
+          fetch="https://github.com/JohnBlue-git/" />
+
+  <default remote="github"
+           revision="main"
+           sync-j="4" />
+
+  <project name="HowToBoostAsio"
+           path="boost-asio">
+    <copyfile src="README.md" dest="README-boost-asio.md" />
+    </project>
+
+  <project name="BoostAsioWebApi-VersionOne"
+           path="web-api">
+    <copyfile src="README.md" dest="README-web-api.md" />
+    </project>
+
+</manifest>
