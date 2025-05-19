@@ -232,3 +232,27 @@ Then we will see
 ├── README-web-api.md        # copied here by <copyfile>
 └── .repo/              # internal repo metadata
 ```
+Also, you will see
+```console
+$ ls -la .repo
+total 40
+drwxrwxrwx+  5 codespace codespace  4096 May 19 13:13 .
+drwxrwxrwx+  3 codespace codespace  4096 May 19 13:13 ..
+-rw-rw-rw-   1 codespace codespace 15146 May 19 13:14 TRACE_FILE
+-rw-rw-rw-   1 codespace codespace   500 May 19 13:13 manifest.xml
+drwxrwxrwx+  2 codespace codespace  4096 May 19 13:13 manifests
+drwxrwxrwx+  7 codespace codespace  4096 May 19 13:14 manifests.git
+drwxrwxrwx+ 11 codespace codespace  4096 May 19 13:13 repo
+
+$ ls .repo/manifests
+README.md  default.xml
+
+$ ls .repo/repo
+LICENSE                completion.bash  git_command.py                hooks              platform_utils_win32.py  repo_trace.py         subcmds
+MANIFEST.in            constraints.txt  git_config.py                 hooks.py           progress.py              requirements.json     tests
+README.md              docs             git_refs.py                   main.py            project.py               run_tests             tox.ini
+SUBMITTING_PATCHES.md  editor.py        git_ssh                       man                pyproject.toml           run_tests.vpython3    wrapper.py
+__pycache__            error.py         git_superproject.py           manifest_xml.py    release                  run_tests.vpython3.8
+color.py               event_log.py     git_trace2_event_log.py       pager.py           repo                     setup.py
+command.py             fetch.py         git_trace2_event_log_base.py  platform_utils.py  repo_logging.py          ssh.py
+```
